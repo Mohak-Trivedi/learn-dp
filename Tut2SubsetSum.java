@@ -13,7 +13,7 @@ Example :- {2,4,6,7,8}
 Answer:- {2+6+8=16}
 */
 
-// Logic:
+// Approach: TC: O(N),  SC: O(N)
 // dp[i] -> Max Sum of Subset
 // At each i: Max of:
 // 1. dp[i - 1] i.e. including current element in subset
