@@ -17,7 +17,10 @@ Array 2(a2) : {-4509,200,3,40}
 Answer:- (200+21234=21434)
 */
 
-// Approach: TC: O(N), SC: O(N)
+// Brute force approach: TC: O(Q * N), SC: O(1)
+// For every query, calculates sum from index 1 to mentioned index.
+
+// Optimizes Approach: TC: O(N + Q), SC: O(N)
 // dp[i] = max sum for subset till index i considering 1-based indexing.
 // At each index, we have 2 choices, choose the one that maximizes the subset sum:
 // 1. Include current ith element: Need to remove previous consecutive element, and then add ith element either from array1 or array2 (whichever maximizes hte subset sum). dp[i - 2] + Math.max(a[i], b[i])
