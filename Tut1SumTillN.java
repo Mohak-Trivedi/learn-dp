@@ -3,7 +3,7 @@
 // Problem: We are given an array of integers(a[n]) . We are given multiple queries of the form : (1, i) which means we need to output the sum of all numbers from index- ‘1’ to index ‘i’ of the array.
 
 // Approach: TC: O(N), SC: O(N)
-// Create dp[] such that dp[i] = sum[0, i]
+// Create dp[] such that dp[i] = sum[1, i]
 
 public class Tut1SumTillN {
     public static void main(String[] args) {
